@@ -1,0 +1,464 @@
+.container{
+    width: 100%;
+    height: calc(100vh-90px);
+    
+    position: relative;
+}
+
+
+.carousel-indicators [data-bs-target]{
+    border-radius: 100%;
+    height: 10px;
+    width: 10px;
+}
+button{
+    background-color: transparent;
+    border-radius: 1rem;
+    padding: .7rem;
+    color: white;
+    border: 2px solid white;
+    
+}
+button:hover{
+    border: 2px solid black;
+}
+.info{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    
+}
+.info-detail{
+    width: 50%;
+    height: 100vh;
+    
+    padding: 2.5rem 4rem;
+}
+.info-detail h1{
+    font-size: 4rem;
+    max-width: 50rem;
+    
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom:1rem ;
+}
+.info-detail p{
+    color: #666;
+    font-weight: 300;
+    max-width: 40rem;
+   font-size: 1.2rem;
+   /* text-align: center; */
+   margin-bottom: 2rem;
+}
+.info-img{
+    width: 50vw;
+    height: 100vh;
+   
+}
+.info-img img{
+    width: 50vw;
+    height: 100vh;
+}
+.service{
+    width: 100vw;
+    height: 250vh;
+    text-align: center;
+     margin-top: 1.7rem;
+}
+
+.Services h1{
+    text-align: center;
+    font-weight: 700;
+    font-size: 5rem;
+}
+.Services h3{
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.Services .container {
+    
+    height: 200vh;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    align-content: flex-start;
+    
+    
+}
+.Services .container .item{
+    border: 1px solid #666;
+    height: 320px;
+    width: 310px;
+    margin: 20px;
+    border-radius: 1rem;
+}
+.Services .container .item:hover{
+    background-color: #34A7E6;
+}
+.Services .container .item img{
+    height: 60px;
+    width: 60px;
+    display: block;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 2rem;
+     
+}
+
+.Services .container .item h3{
+    color: black;
+    font-weight: 600;
+    padding: 1.5rem 0;
+}
+.Services .container .item p{
+    text-align: center;
+    color: #666;
+    font-size: small;
+}
+.contact{
+  width: 100vw;
+  height: 100vh;
+ display: flex;
+ 
+  
+}
+.pic{
+    height:100vh;
+    width: 50vw;
+}
+.pic img{
+    width: 100%;
+    height: 80%;
+   
+}
+.pic h2{
+    padding: 1rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.form{
+    width: 45vw;
+    height: 100vh;
+    margin-top: 8rem;
+    margin-left: 5rem;
+}
+.form input{
+    width: 90%;
+    margin: 10px;
+    padding: 20px;
+    background-color: #EDF3F6;
+    border: none;
+}
+.form textarea{
+    margin-left: 10px;
+    background-color: #EDF3F6;
+}
+.form textarea:hover{
+    border: 2px solid  #34A7E6;
+}
+.form input:hover{
+    border: 2px solid  #34A7E6;
+}
+.form button{
+    background-color: #34A7E6;
+   padding: 1.2rem;
+   margin-left: 7px;
+}
+
+/* media section starts here */
+@media (max-width:1020px){
+    .info-img img{
+        width: 50vw;
+        height: 120vh;
+    }
+    .service{
+        width: 100vw;
+        height: 350vh;
+        text-align: center;
+       
+    }
+    .Services h1{
+        text-align: center;
+        font-weight: 700;
+        font-size: 4rem;
+        margin-top: 5rem;
+    }
+    .Services .container {
+        
+        height: 270vh;
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        align-content: flex-start;
+        justify-content: center;
+        padding-top: 2rem;
+        margin-top: 5rem;
+        
+        
+    }
+    .form textarea{
+       width: 90%;
+    }
+    
+}
+@media (max-width:910px){
+    .info-img img{
+        width: 50vw;
+        height: 120vh;
+        margin-left: 3rem;
+    }
+    .Services h1{
+        text-align: center;
+        font-weight: 600;
+        font-size: 4rem;
+        margin-top: 10rem;
+    }
+    .Services .container {
+        
+        height: 270vh;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        align-content: flex-start;
+        margin-top: 3rem;
+        
+    }
+    .Services .container .item{
+        border: 1px solid #666;
+        height: 320px;
+        width: 280px;
+        margin: 20px;
+        border-radius: 1rem;
+    }
+    .pic{
+        margin-top: 60px;
+        height:100vh;
+        width: 50vw;
+    }
+}
+@media (max-width:767px){
+    .info{
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .info-detail{
+        width: 100%;
+        height: 50vh;
+        
+        padding: 1rem 3rem;
+        margin-left: 2rem;
+    }
+    .info-detail h1{
+        font-size: 2.5rem;
+        max-width: 50rem;
+        
+        font-weight: 600;
+        line-height: 1.2;
+        margin-bottom:1rem ;
+    }
+    .info-detail p{
+        color: #666;
+        font-weight: 300;
+        max-width: 40rem;
+       font-size: 1rem;
+       /* text-align: center; */
+       margin-bottom: 2rem;
+    }
+    .info-img{
+        width: 100vw;
+        height: calc(120vh-50vh);
+       
+    }
+    .info-img img{
+        width: 80vw;
+        height: 70vh;
+    }
+    .service{
+        width: 100vw;
+        height: 250vh;
+        text-align: center;
+      
+    }
+    .Services h1{
+        text-align: center;
+        font-weight: 600;
+        font-size: 4rem;
+        
+    }
+    
+    .Services .container {
+        
+        height: 210vh;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100vw;
+        align-content: flex-start;
+        margin-top: 1rem;
+        
+    }
+    .Services .container .item{
+        border: 1px solid #666;
+        height: 240px;
+        width: 210px;
+        margin: 20px;
+        border-radius: 1rem;
+    }
+    .Services .container .item img{
+        height: 40px;
+        width: 40px;
+        display: block;
+       margin-left: auto;
+       margin-right: auto;
+       margin-top: 2rem;
+         
+    }
+    
+    .Services .container .item h3{
+        color: black;
+        font-weight: 600;
+        padding: 0.7rem 0;
+        font-size: 1.2rem;
+    }
+    .Services .container .item p{
+        text-align: center;
+        color: #666;
+        font-size: x-small;
+    }
+    .contact{
+        width: 100vw;
+        height: 100vh;
+       display: flex;
+        flex-direction:column ;
+        
+      }
+      .pic{
+        height:100vh;
+        width: 80vw;
+    }
+    .pic img{
+        width: 100%;
+        height: 80%;
+        margin-left: 50px;
+       
+    }
+    .pic h2{
+        padding: 1rem;
+        font-size: 2.5rem;
+        font-weight: 700;
+        text-align: center;
+        margin-left: 55px;
+    }
+    .form{
+        width:80vw;
+        height: 100vh;
+        margin-top: 0.2rem;
+        margin-left: 5rem;
+    }
+    .form input{
+        width: 90%;
+        margin: 10px;
+        padding: 20px;
+        background-color: #EDF3F6;
+        border: none;
+    }
+    .form textarea{
+        margin-left: 10px;
+        background-color: #EDF3F6;
+    }
+    .form textarea:hover{
+        border: 2px solid  #34A7E6;
+    }
+    .form input:hover{
+        border: 2px solid  #34A7E6;
+    }
+    .form button{
+        background-color: #34A7E6;
+       padding: 1.2rem;
+       margin-left: 7px;
+    }
+    
+}
+@media (max-width:607px){
+    .info-detail{
+        width: 100%;
+        height: 50vh;
+        
+        padding: 1rem 2rem;
+       
+    }
+    .info-img{
+        width: 100vw;
+        height: 70vh;
+       
+    }
+    .info-img img{
+        width: 80vw;
+        height: 60vh;
+        margin-top: 5rem;
+        margin-right: 3rem;
+    }
+    .service{
+        width: 100vw;
+        height: 250vh;
+        text-align: center;
+      
+    }
+    .Services h1{
+        text-align: center;
+        font-weight: 600;
+        font-size: 4rem;
+        
+    }
+    
+    .Services .container {
+        
+        height: 420vh;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100vw;
+        align-content: flex-start;
+        
+        
+    }
+    .Services .container .item{
+        border: 1px solid #666;
+        height: 270px;
+        width: 300px;
+        margin: 8px;
+        border-radius: 1rem;
+    }
+    .Services .container .item img{
+        height: 50px;
+        width: 50px;
+        display: block;
+       margin-left: auto;
+       margin-right: auto;
+       margin-top: 2rem;
+         
+    }
+    
+    .Services .container .item h3{
+        color: black;
+        font-weight: 600;
+        padding: 1rem 0;
+        font-size: 1.5rem;
+    }
+    .Services .container .item p{
+        text-align: center;
+        color: #666;
+        font-size: 0.8rem;
+    }
+    .form{
+        width:80vw;
+        height: 100vh;
+        margin-top: 1rem;
+        margin-left: 5rem;
+    }
+}
+
+
+ /* media section end here */

@@ -1,0 +1,26 @@
+.containerFooter{
+    height: 80vh;
+    width: 100vw;
+    background-color: #121212;
+    color: white;
+    margin-top: 7rem;
+    display: flex;
+}
+.itemFooter{
+    margin-top: 1rem;
+    padding: 1rem 6rem;
+}
+.itemFooter p{
+   font-size: 1.1rem;
+   font-weight: 200;
+}
+.itemFooter .para{
+    margin-top: 3rem;
+    width: 120%;
+}
+.itemFooter .servicepara{
+    width: 13vw;
+}
+.itemFooter p:hover{
+    color:#34A7E6 ;
+}
